@@ -7,7 +7,7 @@ namespace Company.Function
 {
     public static class QueueTrigger
     {
-        [FunctionName("QueueTrigger")]
+        [FunctionName("ChangeName")]
         public static void Run([ServiceBusTrigger("queue", Connection = "jehollanpremium_SERVICEBUS")]string myQueueItem, ILogger log)
         {
             log.LogInformation($"A CHANGE. C# ServiceBus queue trigger function processed message: {myQueueItem}");
