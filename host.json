@@ -6,6 +6,10 @@
             "samplingSettings": {
                 "isEnabled": true
             }
-        }
+        },
+        "logLevel": {
+            "default": "Error",
+            "Host.Results": "Information"
+          }
     }
 }
